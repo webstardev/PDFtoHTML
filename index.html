@@ -19,35 +19,31 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="./assets/css/styles.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
 
   <body>
-    <div class="main-container">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <h4 class="text-white">Collapsed content</h4>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
-        </div>
-      </div>
-      <nav class="navbar">
+    <div class="main-container container">
+      <nav id="topnav" class="navbar">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </a>
         <button
-          class="navbar-toggler"
+          class="collpase-button m-lauto"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
+          data-target="#nav-menu"
+          aria-controls="#nav-menu"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <img src="./assets/images/hamburger.svg" alt="hamburger" />
         </button>
       </nav>
+
+      <div class="title-section">
+        <h1>Kontakt</h1>
+      </div>
     </div>
 
     <script

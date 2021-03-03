@@ -1,3 +1,7 @@
+:root {
+  --green: #26786a;
+}
+
 html {
   font-family: "Niramit", sans-serif;
 }
@@ -6,4 +10,47 @@ html {
   width: 100%;
   max-width: 1492px;
   position: relative;
+  margin: 0 auto;
+}
+
+#topnav {
+  display: flex;
+  align-items: center;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  border-bottom: 1px #f2f2f2 dotted;
+}
+
+#topnav .navbar-brand {
+  padding: 0;
+}
+
+#topnav .collpase-button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+#nav-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+h1 {
+  color: var(--green);
+  margin: 0;
+  font-size: 100px;
+  font-weight: bold;
 }
