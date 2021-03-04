@@ -7,6 +7,12 @@ html {
   color: #2d3663;
 }
 
+@media screen and (max-width: 1491px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 .color-green {
   color: var(--green);
 }
@@ -35,18 +41,57 @@ h4 {
   font-size: 2.25rem;
 }
 
+@media screen and (max-width: 1023px) {
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+  }
+}
+
 .h3-greenback {
   border-radius: 13px;
   background-color: #26796a;
   color: white;
-  font-size: 45px;
-  line-height: 54px;
+  font-size: 2.8125rem;
+  line-height: 1.2;
   width: 100%;
   height: 155px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .h3-greenback {
+    font-size: 2.5rem;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .h3-greenback {
+    font-size: 2rem;
+  }
 }
 
 p {
@@ -95,8 +140,8 @@ p {
 #topnav {
   display: flex;
   align-items: center;
-  padding-top: 37px;
-  padding-bottom: 37px;
+  padding-top: 2.31rem;
+  padding-bottom: 2.31rem;
   border-bottom: 1px #f2f2f2 dotted;
 }
 
@@ -119,19 +164,49 @@ p {
   width: 100%;
 }
 
+@media screen and (max-width: 1023px) {
+  #topnav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .title-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   border-bottom: 2px solid var(--green);
 }
 
 .title-section h1 {
   color: var(--green);
   margin: 0;
-  font-size: 100px;
+  font-size: 6.25rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .title-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .title-section h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title-section h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title-section h1 {
+    font-size: 2.5rem;
+  }
 }
 
 .custom-footer {
@@ -380,7 +455,7 @@ p {
 .service-detail-section .grid-container {
   display: grid;
   grid-template-columns: auto 1px auto;
-  grid-gap: 80px;
+  grid-gap: 5rem;
 }
 
 .service-detail-section .content {
@@ -481,7 +556,25 @@ p {
 
 /* medical package page styles start */
 .medical-package-section-one {
-  padding: 114px 0;
+  padding: 7.125rem 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .medical-package-section-one {
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .medical-package-section-one {
+    padding: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .medical-package-section-one {
+    padding: 3rem 0;
+  }
 }
 
 .medical-package-section-one h2 {
@@ -493,7 +586,7 @@ p {
 }
 
 .medical-package-section-two .h3-greenback {
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 
 .medical-package-section-two .grid-container {
@@ -513,8 +606,8 @@ p {
   height: 71px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: fit;
   margin: 0 0 8px 0;
+  background-size: contain;
 }
 
 .medical-package-section-two .grid-container h4 {
@@ -522,8 +615,68 @@ p {
   font-weight: normal;
 }
 
+@media screen and (max-width: 1279px) {
+  .medical-package-section-two .grid-container {
+    grid-gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .medical-package-section-two .grid-container .content .img-div {
+    width: 69px;
+    height: 56.8px;
+  }
+  .medical-package-section-two .grid-container h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .medical-package-section-two .grid-container {
+    grid-gap: 10px;
+  }
+  .medical-package-section-two .grid-container .content .img-div {
+    width: 69px;
+    height: 56.8px;
+  }
+  .medical-package-section-two .grid-container h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .medical-package-section-two .grid-container {
+    grid-template-columns: 100%;
+  }
+
+  .medical-package-section-two .grid-container .content {
+    padding: 20px 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .medical-package-section-two .grid-container .vertical-line {
+    display: none;
+  }
+
+  .medical-package-section-two .grid-container .horizontal-line {
+    display: none;
+  }
+}
+
 .medical-package-section-three {
-  margin-bottom: 110px;
+  margin-bottom: 6.875rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .medical-package-section-three {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .medical-package-section-three {
+    margin-bottom: 3rem;
+  }
 }
 
 .medical-package-section-three h2 {
@@ -564,6 +717,18 @@ p {
   background-image: url("../images/plus-bold.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+@media screen and (max-width: 767px) {
+  .membership-card {
+    padding-left: 30px;
+  }
+
+  .membership-card .red-plus-div {
+    width: 60px;
+    height: 60px;
+    background-size: 60% 60%;
+  }
 }
 
 .membership-card .membership-title {
@@ -650,4 +815,26 @@ p {
 .membership-card.member-premium .membership-content .btn-membership {
   color: #293459 !important;
 }
+
+@media screen and (max-width: 1100px) {
+  .membership-card {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .membership-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .membership-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .membership-card:last-child {
+    margin-right: auto;
+  }
+}
+
 /* medical package page styles end */
